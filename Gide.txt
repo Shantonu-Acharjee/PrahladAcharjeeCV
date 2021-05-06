@@ -1,33 +1,51 @@
+:root{
+    --primary : #1a253f;
+    --dark : #151A33;
+    --secondary : #2b55cc;
+    --info : #4d79f6;
+    --ternary : #848db3;
+    --pure : #eff2f9;
+    --fade : #7081b9;
+    --mild : #8997bd;
+    --footer : #212A4A;
+    --black : #060b1b;
+    --twitter : #4ac7ec;
+    --dribbble : #ff5da0;
+    --success : #12cab8;
+    --danger : #f1646c;
+    --dark-blue : #28365f;
+    --youtube : #FF0000;
+    --instagram : linear-gradient( #8a3ab9, #fbad50, #cd486b, #4c68d7 );
+    --linkedin : #0077b5;
+    --github :  #3cdf13;
+
+
+}
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shorcut icon" href="./images/Prahlad favicon 16x16.png">
-    <title>Prahlad Acharjee</title>
     <link rel="stylesheet" href="./plugins/headline/headline.css">
+    <link rel="shorcut icon" href="./images/Shantonu favicon 16x16.png">
     <link rel="stylesheet" href="./css/style.css">
+    <title>Prahlad Acharjee</title>
 
-    <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/ab0e23d463.js" crossorigin="anonymous"></script>
 </head>
 
 
 
-
-
-
-
-<!--Body Start-->
 <body>
     
-    <!--NavBar Start-->
     <nav>
         <div class="container inner">
             <div class="logo">
-                Prahlad Acharjee CV
+                Prahalad CV
             </div>
 
             <div>
@@ -38,41 +56,37 @@
             </div>
         </div>
     </nav>
-    <!--NavBar End-->
+
+    
+    
+    
+   
 
 
 
 
-
-
-    <!--Main Start-->
     <main class="container">
-        <!--Profile Start-->
         <section class="profile" id="profile_ripple">
-
             <div class="left">
-
-                <div class="avatar_block">
-                    <img src="./images/Prahlad Profile 128x128.png" alt="">
+                <div class="avater_block">
+                    <img src="./images/Shantonu Profile 128x128.png" alt="">
                     <span>
                         <i class="fas fa-comment"></i>
                     </span>
                 </div>
 
-
                 <div>
-                    <h2>Prahlad Acharjee</h2>
-
+                    <h2>Prahalad Acharjee</h2>
                     <p class="cd-headline loading-bar">
                         <span class="cd-words-wrapper">
                             <b class="is-visible">Textile Engineer.</b>
-                            <b>Love to analysis to find out the root cause and Make solution.</b>
-                            
+                            <b>Love to analysis to find out the root cause and Make solution</b>    
                         </span>
+
                     </p>
                 </div>
-
             </div>
+
 
 
 
@@ -82,7 +96,6 @@
                         <i class="fas fa-phone"></i>
                         <strong>Phone : </strong> +8801914671672
                     </li>
-
 
                     <li>
                         <i class="fas fa-phone"></i>
@@ -96,38 +109,38 @@
                     </li>
                 </ul>
 
-
                 <ul class="socials">
                     <li>
-                        <a href="https://www.facebook.com/prolu.tex" target="_blank">
+                        <a href="https://www.facebook.com/prolu.tex">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.instagram.com/prolu.tex/" target="_blank">
+                        <a href="https://www.instagram.com/prolu.tex/">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.linkedin.com/in/prahalad-acharjee-47a05a210/" target="_blank">
+                        <a href="#">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
 
 
                     <li>
-                        <a href="https://twitter.com/PrahaladAcharj1" target="_blank">
+                        <a href="https://twitter.com/PrahaladAcharj1">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
+
+                    
+
+
                 </ul>
             </div>
-
-
         </section>
-        <!--Profile End-->
 
 
 
@@ -143,23 +156,16 @@
 
 
 
-
-
-
-
-        <!--About ME Start-->
         <section class="about">
-            <h1 class="section_heading">About Me</h1>
+            <h1 class="section_heaing"> About Me</h1>
 
             <div class="content">
+
                 <div class="left">
                     <h2>I'm Prahalad Acharjee</h2>
-                    <p>
-                        I`m a highly motivated person, like to bring my best performance & to get best output from my team members while I work as a team leader in target oriented job situation. I aspire to reach a high standard & quality in everything I execute.
-                    </p>
+                    <p>I`m a highly motivated person, like to bring my best performance & to get best output from my team members while I work as a team leader in target oriented job situation. I aspire to reach a high standard & quality in everything I execute.</p>
                     <button>Download CV</button>
                 </div>
-
 
 
 
@@ -228,7 +234,6 @@
                 </div>
             </div>
         </section>
-        <!--About Me End-->
 
 
 
@@ -236,13 +241,8 @@
 
 
 
-
-
-
-
-        <!--Skill Start-->
         <section class="skills">
-            <h1 class="section_heading"> Education & Training </h1>
+            <h1 class="section_heaing_skil"> Education & Training </h1>
             <div class="content">
 
                 <div class="left">
@@ -335,23 +335,6 @@
                     </div>
 
 
-
-
-
-
-                    
-                </div>
-
-
-
-
-
-
-
-                <!--Right Start-->
-                <div class="right">
-
-                    <!--Training Start-->
                     <div class="inner_right">
                         <div class="heading">
                             <i class="fas fa-chart-bar"></i>
@@ -394,14 +377,16 @@
 
                         </div>
                     </div>
-                    <!--Training End-->
+                </div>
 
 
 
 
 
 
-                    <!--Skill Start-->
+
+
+                <div class="right">
                     <div class="skills_wrapper">
                         <div class="skill_box">
                             <h4>Bengali </h4>
@@ -431,33 +416,60 @@
                         </div>
 
                         <div class="skill_box">
-                            <h4>Microsoft Word</h4>
+                            <h4>Python & C++</h4>
                             <div class="progress_wrap">
-                                <span data-percent="80" class="progress_bar">
+                                <span data-percent="78" class="progress_bar">
                                     <span class="tooltip">78%</span>
                                 </span>
                             </div>
                         </div>
 
                         <div class="skill_box">
-                            <h4>Microsoft Excel</h4>
+                            <h4>Python & C++</h4>
                             <div class="progress_wrap">
-                                <span data-percent="70" class="progress_bar">
+                                <span data-percent="78" class="progress_bar">
                                     <span class="tooltip">78%</span>
                                 </span>
                             </div>
                         </div>
 
-                        
+                        <div class="skill_box">
+                            <h4>Python & C++</h4>
+                            <div class="progress_wrap">
+                                <span data-percent="78" class="progress_bar">
+                                    <span class="tooltip">78%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skill_box">
+                            <h4>Python & C++</h4>
+                            <div class="progress_wrap">
+                                <span data-percent="78" class="progress_bar">
+                                    <span class="tooltip">78%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skill_box">
+                            <h4>Python & C++</h4>
+                            <div class="progress_wrap">
+                                <span data-percent="78" class="progress_bar">
+                                    <span class="tooltip">78%</span>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <!--Skill End-->
-
-
                 </div>
-                <!--Right End-->
             </div>
         </section>
-        <!--Skill End-->
+
+
+
+
+
+
+
 
 
 
@@ -475,14 +487,6 @@
 
 
     </main>
-    <!--Main End-->
-
-
-
-
-
-
-
 
 
 
@@ -494,7 +498,25 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./plugins/headline/headline.js"></script>
     <script src="./plugins/ripples.js"></script>
+
     <script src="./js/app.js"></script>
 </body>
-<!--Body End-->
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    

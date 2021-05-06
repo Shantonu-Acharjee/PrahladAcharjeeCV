@@ -1,7 +1,96 @@
-/* Font */
+/*--------------------
+Fonts Start
+--------------------*/
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
 
-/* Colors */
+/*--------------------
+Fonts End
+--------------------*/
+
+
+
+
+
+
+
+/*--------------------
+Pre-Set Start
+--------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: var(--dark);
+    --webkit-font-smoothing: antialiased;
+    height: 5000px;
+}
+
+main{
+    background-color: var(--primary);
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    line-height: 1;
+}
+
+
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+.section_heading{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--pure);
+    margin-bottom: 3rem;
+    text-shadow: 0 0 1 rgba(40, 54, 95, 0.1);
+    position: relative;
+}
+
+
+.section_heading::after{
+    content: '';
+    height: 3px;
+    width: 200px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    border: 1.5px dotted var(--danger);
+}
+
+
+
+
+section{
+    padding: 3rem;
+}
+/*--------------------
+Pre-Set End
+--------------------*/
+
+
+
+
+
+
+
+
+
+
+/*--------------------
+Color Start
+--------------------*/
 
 :root{
     --primary : #1a253f;
@@ -20,42 +109,26 @@
     --danger : #f1646c;
     --dark-blue : #28365f;
     --youtube : #FF0000;
-    --instagram : linear-gradient( #8a3ab9, #fbad50, #cd486b, #4c68d7 );
+    --instagram : rgba(255, 81, 0, 0.877);
     --linkedin : #0077b5;
     --github :  #3cdf13;
-
-
 }
 
-
-/* Reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'IBM plex Sans', sans-serif;
-    background: var(--dark);
-    -webkit-font-smoothing: antialiased;
-}
-
-h1,h2,h3,h4,h5,h6{
-    margin: 0;
-    line-height: 1;
-}
+/*--------------------
+Color End
+--------------------*/
 
 
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
-}
 
 
+
+
+
+/*--------------------
+NavBar Start
+--------------------*/
 nav{
-    background: var(--primary);
+    background-color: var(--primary);
     padding: 1.6rem 0;
 }
 
@@ -66,6 +139,7 @@ nav .inner{
 }
 
 
+
 nav .inner .logo{
     text-transform: uppercase;
     color: var(--pure);
@@ -74,44 +148,52 @@ nav .inner .logo{
     font-weight: 500;
 }
 
-/*
-nav .inner .logo i{
-    color: var(--info);
-}
-
-*/
-
 
 nav .inner button{
-    background: var(--secondary);
+    background-color: var(--secondary);
     border: none;
     padding: 0.6rem 1rem;
     color: var(--pure);
     font-size: 14px;
     border-radius: 4px;
-    letter-spacing: 1.5px;
 }
 
+/*--------------------
+NavBar End
+--------------------*/
 
+
+
+
+
+/*--------------------
+Profile Start
+--------------------*/
 section.profile{
-    background: var(--black);
+    background-color: var(--black);
     display: flex;
     align-items: center;
     padding: 3rem;
     margin-top: 60px;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80% );
-    padding-bottom: 6rem;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+    padding-bottom: 4rem;
 }
 
+
+
 section.profile .left{
-    flex: 2;
     display: flex;
+    flex: 2;
     align-items: center;
 }
+
+
 
 section.profile .right{
     flex: 1;
 }
+
+
 
 section.profile .left h2{
     color: var(--fade);
@@ -120,19 +202,25 @@ section.profile .left h2{
     margin-bottom: 1rem;
 }
 
+
+
+
 section.profile .left p{
     color: var(--mild);
     font-size: 14px;
+}
+
+
+section.profile .left p b{
+    padding-bottom: 1rem;
+    font-weight: 400;
 }
 
 section.profile .left .cd-headline.loading-bar .cd-words-wrapper::after {
     background: linear-gradient(to right, var(--secondary), var(--success));
 }
 
-section.profile .left p b{
-    padding-bottom: .8rem;
-    font-weight: 400;
-}
+
 
 section.profile .left img{
     width: 128px;
@@ -141,17 +229,22 @@ section.profile .left img{
     object-fit: cover;
 }
 
-section.profile .left .avater_block{
+
+
+section.profile .left .avatar_block{
     position: relative;
     margin-right: 2rem;
 }
 
 
-section.profile .left .avater_block span{
+
+
+section.profile .left .avatar_block span{
     position: absolute;
     right: 4px;
     bottom: 4px;
-    background: var(--info);
+    font-size: 20px;
+    background-color: var(--info);
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -159,25 +252,42 @@ section.profile .left .avater_block span{
     align-items: center;
     justify-content: center;
     color: var(--pure);
-    box-shadow: 0px 0px 20px 0px rgba(32, 41, 54, 0.05);
+    box-shadow: 0px 0px 20px 0px rgba(32, 42, 54, 0.05);
     cursor: pointer;
 }
+
+
+
+
+
 
 section.profile .right ul.contact{
     list-style-type: none;
     margin-bottom: 1.6rem;
 }
 
+
 section.profile .right ul.contact li{
     color: var(--ternary);
     margin-bottom: .7rem;
-    font: 14px;
+    font-size: 14px;
 }
+
+
+
+
+
 
 section.profile .right ul.contact li i{
     font-size: 18px;
     margin-right: 0.3rem;
 }
+
+
+
+
+
+
 
 section.profile .right ul.socials{
     display: flex;
@@ -185,7 +295,14 @@ section.profile .right ul.socials{
     list-style-type: none;
 }
 
-section.profile .right ul.socials li a {
+
+
+section.profile .right ul.socials li{
+    margin-right: 0.8rem;
+}
+
+
+section.profile .right ul.socials li a{
     display: inline-block;
     width: 36px;
     height: 36px;
@@ -193,80 +310,58 @@ section.profile .right ul.socials li a {
     color: var(--pure);
     line-height: 36px;
     text-align: center;
-    
+
 }
 
 
-section.profile .right ul.socials li{
-    margin-right: 0.8rem;
-}
 
 section.profile .right ul.socials li:nth-child(1) a {
-    background: var(--secondary);
+    background-color: var(--secondary);
 }
 
 
 
 
 section.profile .right ul.socials li:nth-child(2) a {
-    background: var(--instagram);
+    background-color: var(--instagram);
 }
+
 
 
 section.profile .right ul.socials li:nth-child(3) a {
-    background: var(--linkedin);
+    background-color: var(--linkedin);
 }
-
 
 
 
 
 section.profile .right ul.socials li:nth-child(4) a {
-    background: var(--twitter);
+    background-color: var(--twitter);
 }
+/*--------------------
+Profile End
+--------------------*/
 
 
 
 
 
 
-.section_heaing{
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--pure);
-    margin-bottom: 3rem;
-    text-shadow: 0 0 1px rgba(40, 54, 95, 0.1);
-    position: relative;
-}
-
-
-section{
-    padding: 3rem;
-}
-
-main{
-    background: var(--primary);
-}
 
 
 
-.section_heaing:after{
-    content: '';
-    height: 3px;
-    width: 90px;
-    position: absolute;
-    top: 28px;
-    left: 0;
-    border: 1px dotted var(--danger);
-}
 
 
 
+/*--------------------
+About ME Start
+--------------------*/
 section.about .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 16rem;
+    grid-gap: 10rem;
 }
+
 
 
 section.about .content h2{
@@ -278,6 +373,7 @@ section.about .content h2{
 }
 
 
+
 section.about .content p{
     color: var(--ternary);
     font-size: 14px;
@@ -286,16 +382,20 @@ section.about .content p{
     margin-bottom: 1rem;
 }
 
+
 section.about .content .left button{
-    background: rgba(77, 121, 246, 0.1);
+    background-color: rgba(77, 121, 246, 0.1);
     color: var(--info);
     padding: 4px 8px;
     font-size: 12px;
     border: none;
+    border-radius: 4px;
     line-height: 24px;
     outline: none;
     cursor: pointer;
 }
+
+
 
 
 section.about .content .right p{
@@ -307,6 +407,11 @@ section.about .content .right p{
 }
 
 
+
+
+
+
+
 section.about .content .right p span:nth-child(1){
     width: 130px;
     float: left;
@@ -316,96 +421,95 @@ section.about .content .right p span:nth-child(1){
     position: relative;
 }
 
+
+
 section.about .content .right p span:nth-child(2){
     padding-left: 150px;
     display: block;
 }
 
-section.about .content .right p span:nth-child(1):after{
-    content: ":";
+
+
+section.about .content .right p span:nth-child(1)::after{
+    content: ':';
     position: absolute;
     right: 0;
     top: 0;
 }
 
 
-.section_heaing_skil{
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--pure);
-    margin-bottom: 3rem;
-    text-shadow: 0 0 1px rgba(40, 54, 95, 0.1);
-    position: relative;
-}
+/*--------------------
+About ME End
+--------------------*/
 
 
-.section_heaing_skil:after{
-    content: '';
-    height: 3px;
-    width: 170px;
-    position: absolute;
-    top: 28px;
-    left: 0;
-    border: 1px dotted var(--danger);
-}
 
+
+
+
+
+
+
+
+
+
+/*--------------------
+Skill Start
+--------------------*/
 section.skills .content{
     display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
-    align-items: center;
-}
-
-
-section.skills .content .left{
-    display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 
 
-section.skills .content .left .heading{
+
+
+section.skills .content .left .heading , section.skills .content .right .heading{
     margin-bottom: 2rem;
 }
 
-
-section.skills .content .left .heading i{
+section.skills .content .left .heading i , section.skills .content .right .heading i{
     color: var(--fade);
     font-size: 52px;
-    margin-bottom: 2rem;
-    margin-left: 1.5rem;
-
 }
 
 
-section.skills .content .left .heading h5{
+
+section.skills .content .left .heading h5, section.skills .content .right .heading h5{
     font-size: 16px;
     margin-top: 0.5rem;
     color: var(--mild);
 }
 
 
-section.skills .content .left p{
+
+
+
+section.skills .content .left p , section.skills .content .right p{
     font-size: 14px;
     color: var(--ternary);
     line-height: 1.7;
 }
 
-section.skills .content .left p.center{
+
+
+section.skills .content .left p.center , section.skills .content .right p.center{
     color: var(--fade);
+    font-weight: 600;
 }
 
-section.skills .content .left .item{
+
+
+
+section.skills .content .left .item , section.skills .content .right .item{
     margin-bottom: 2.6rem;
     margin-left: 15px;
     position: relative;
 }
 
 
-section.skills .content .left .timeline_wrapper{
-    border-left: 2px dotted var(--dark-blue);
-}
-
-
-section.skills .content .left .item:after{
+section.skills .content .left .item::after , section.skills .content .right .item::after{
     content: '';
     position: absolute;
     left: 0;
@@ -416,6 +520,18 @@ section.skills .content .left .item:after{
     border-radius: 50%;
     margin-left: -21px;
 }
+
+
+section.skills .content .left .timeline_wrapper , section.skills .content .right .timeline_wrapper{
+    border-left: 2px dotted var(--dark-blue);
+}
+
+
+
+section.skills .skills_wrapper{
+    margin-top: 10rem;
+}
+
 
 
 section.skills .skills_wrapper .skill_box h4{
@@ -433,23 +549,28 @@ section.skills .skills_wrapper .skill_box{
 
 
 section.skills .skills_wrapper .skill_box .progress_wrap{
-    background: #20294a;
+    background-color: #20294a;
     height: 6px;
     width: 100%;
     border: 2px solid #1a253f;
-    box-shadow: 0px 0px 1px 0.25px #4d79f6;
+    box-shadow: 0 0 1px 0.25px #4d79f6;
     border-radius: 10px;
-    
+    border: 2px solid #1a253f;
 }
+
 
 
 section.skills .skills_wrapper .skill_box .progress_wrap .progress_bar{
     display: block;
     height: 100%;
-    background: var(--info);
+    background-color: var(--info);
     width: 50%;
     position: relative;
+    transition: all 2s ease-in-out;
+    
 }
+
+
 
 section.skills .skills_wrapper .skill_box .progress_wrap .progress_bar .tooltip{
     position: absolute;
@@ -460,5 +581,10 @@ section.skills .skills_wrapper .skill_box .progress_wrap .progress_bar .tooltip{
     font-size: 16px;
     text-transform: uppercase;
 }
+/*--------------------
+Skill End
+--------------------*/
+
+
 
 
