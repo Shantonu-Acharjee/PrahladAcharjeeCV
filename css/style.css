@@ -240,6 +240,11 @@ section.profile .left .avatar_block{
 }
 
 
+section.profile .left .avatar_block a i{
+    color: var(--pure);
+}
+
+
 
 
 section.profile .left .avatar_block span{
@@ -269,11 +274,14 @@ section.profile .right ul.contact{
     margin-bottom: 1.6rem;
 }
 
-
 section.profile .right ul.contact li{
+    margin-bottom: .8rem;
+}
+
+section.profile .right ul.contact li a{
     color: var(--ternary);
-    margin-bottom: .7rem;
     font-size: 14px;
+    transition: all .3s ease;
 }
 
 
@@ -281,9 +289,10 @@ section.profile .right ul.contact li{
 
 
 
-section.profile .right ul.contact li i{
+section.profile .right ul.contact li a i{
     font-size: 18px;
     margin-right: 0.3rem;
+ 
 }
 
 
@@ -302,6 +311,12 @@ section.profile .right ul.socials{
 
 section.profile .right ul.socials li{
     margin-right: 0.8rem;
+    transition: all ease .3s;
+}
+
+
+section.profile .right ul.socials li:hover{
+    transform: scale(1.2);
 }
 
 
@@ -396,6 +411,11 @@ section.about .content .left button{
     line-height: 24px;
     outline: none;
     cursor: pointer;
+    transition: ease .3s all;
+}
+
+section.about .content .left button:hover{
+    transform: scale(1.1);
 }
 
 
@@ -822,7 +842,7 @@ section.contact .wrapper{
     align-items: center;
 }
 
-section.contact .wrapper .left > div{
+section.contact .wrapper .left > div a{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
@@ -846,7 +866,7 @@ section.contact .wrapper .left h4{
     margin-bottom: 5px;
 }
 
-section.contact .wrapper .left{
+section.contact .wrapper .left a{
     color: var(--ternary);
 }
 
@@ -934,6 +954,13 @@ footer{
     color: var(--ternary);
 }
 
+footer a{
+    color: var(--pure);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
 
 /*-------------------- 
 Footer End
